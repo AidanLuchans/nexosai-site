@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>Nexos AI | Home</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -66,6 +69,15 @@
       margin: 15px;
       width: 200px;
       text-align: center;
+      transition: transform 0.2s;
+    }
+    .feature:hover {
+      transform: scale(1.05);
+    }
+    .feature a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
     .feature h3 {
       margin-top: 15px;
@@ -118,6 +130,20 @@
       border-radius: 5px;
       text-decoration: none;
     }
+    .service-description {
+      padding: 60px 20px;
+      background-color: #0b1120;
+      border-top: 1px solid #1e293b;
+    }
+    .service-description h2 {
+      color: #67e8f9;
+      margin-bottom: 10px;
+    }
+    .service-description p {
+      max-width: 600px;
+      margin: auto;
+      color: #cbd5e1;
+    }
   </style>
 </head>
 <body>
@@ -140,20 +166,28 @@
 
   <section class="features">
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/67e8f9/search--v1.png"/>
-      <h3>AI Audits</h3>
+      <a href="#ai-audits">
+        <img src="https://img.icons8.com/ios-filled/50/67e8f9/search--v1.png"/>
+        <h3>AI Audits</h3>
+      </a>
     </div>
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/67e8f9/flow-chart.png"/>
-      <h3>Workflow Automation</h3>
+      <a href="#workflow-automation">
+        <img src="https://img.icons8.com/ios-filled/50/67e8f9/flow-chart.png"/>
+        <h3>Workflow Automation</h3>
+      </a>
     </div>
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/67e8f9/artificial-intelligence.png"/>
-      <h3>Custom GPTs</h3>
+      <a href="#custom-gpts">
+        <img src="https://img.icons8.com/ios-filled/50/67e8f9/artificial-intelligence.png"/>
+        <h3>Custom GPTs</h3>
+      </a>
     </div>
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/67e8f9/settings.png"/>
-      <h3>Ongoing AI Support</h3>
+      <a href="#ai-support">
+        <img src="https://img.icons8.com/ios-filled/50/67e8f9/settings.png"/>
+        <h3>Ongoing AI Support</h3>
+      </a>
     </div>
   </section>
 
@@ -169,6 +203,27 @@
       <li>✓ Simple tools, not hype</li>
       <li>✓ Clear ROI</li>
     </ul>
+  </section>
+
+  <!-- Service Details Sections -->
+  <section id="ai-audits" class="service-description">
+    <h2>AI Audits</h2>
+    <p>We evaluate your business processes and identify where AI can create the biggest impact—whether through reducing costs, improving speed, or boosting consistency.</p>
+  </section>
+
+  <section id="workflow-automation" class="service-description">
+    <h2>Workflow Automation</h2>
+    <p>We build intelligent automations to eliminate repetitive tasks in sales, customer service, HR, and more—freeing up your team for strategic work.</p>
+  </section>
+
+  <section id="custom-gpts" class="service-description">
+    <h2>Custom GPTs</h2>
+    <p>Our team creates GPT-powered tools trained on your internal knowledge base to deliver accurate, fast, and scalable AI-driven responses or content creation.</p>
+  </section>
+
+  <section id="ai-support" class="service-description">
+    <h2>Ongoing AI Support</h2>
+    <p>We provide continuous monitoring, fine-tuning, and improvements to your AI systems—making sure your tools adapt as your business grows.</p>
   </section>
 
   <footer class="footer">
