@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Pricing | Nexos AI</title>
-  
-<link rel="icon" type="image/png" href="nexos_favicon.png">
-<link rel="icon" href="nexos_favicon.ico" type="image/x-icon">
+
+  <link rel="icon" type="image/png" href="nexos_favicon.png">
+  <link rel="icon" href="nexos_favicon.ico" type="image/x-icon">
 
   <style>
     body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #0b1120; color: #ffffff; }
@@ -15,33 +15,58 @@
     .hero { text-align: center; padding: 80px 20px 40px; }
     .hero h1 { font-size: 3rem; color: #67e8f9; }
     .hero p { font-size: 1.2rem; color: #cbd5e1; }
-    /* Scrollbar styling for WebKit browsers */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-::-webkit-scrollbar-track {
-  background: #0b1120; /* same as your site background */
-}
+    .pricing-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px 80px;
+      display: grid;
+      gap: 40px;
+    }
 
-::-webkit-scrollbar-thumb {
-  background: #1e293b; /* soft gray-blue thumb */
-  border-radius: 6px;
-}
+    .plan {
+      background-color: #1e293b;
+      padding: 30px;
+      border-radius: 10px;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #3b82f6; /* hover color (blue accent) */
-}
+    .plan h2 {
+      color: #3b82f6;
+      margin-bottom: 10px;
+    }
 
+    .plan p {
+      color: #cbd5e1;
+    }
 
-    .pricing-section { max-width: 1000px; margin: auto; padding: 40px 20px; display: grid; gap: 40px; }
-    .plan { background-color: #1e293b; padding: 30px; border-radius: 10px; }
-    .plan h2 { color: #3b82f6; margin-bottom: 10px; }
-    .plan ul { padding-left: 20px; }
-    .plan li { margin-bottom: 10px; color: #cbd5e1; }
-    .price { font-size: 1.5rem; color: #67e8f9; font-weight: bold; margin: 15px 0; }
+    .plan ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
 
-    footer { text-align: center; background-color: #0f172a; padding: 40px 20px; }
+    .plan li {
+      margin-bottom: 10px;
+      color: #cbd5e1;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #67e8f9;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0f172a;
+      padding: 40px 20px;
+    }
+
+    /* Scrollbar styling */
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #0b1120; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 6px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
   </style>
 </head>
 <body>
@@ -59,7 +84,7 @@
 
 <section class="hero">
   <h1>Pricing & Packages</h1>
-  <p>Clear, transparent pricing for every AI service we offer. No surprises.</p>
+  <p>Clear, transparent pricing for every AI service we offer. No surprises — just results.</p>
 </section>
 
 <section class="pricing-section">
@@ -67,40 +92,52 @@
   <div class="plan">
     <h2>AI Efficiency Audits</h2>
     <p class="price">Starting at $499</p>
+    <p>Perfect for businesses that want to identify areas where automation and AI can save time and money.</p>
     <ul>
-      <li>Complete workflow assessment</li>
-      <li>AI integration roadmap</li>
-      <li>Custom PDF report with action plan</li>
+      <li>Discovery call with key team members</li>
+      <li>Workflow mapping and software usage review</li>
+      <li>Audit of repetitive tasks, data flow, and bottlenecks</li>
+      <li>Custom AI opportunities report (PDF)</li>
+      <li>Clear next-step action plan for automation</li>
     </ul>
   </div>
 
   <div class="plan">
     <h2>Workflow Automation</h2>
     <p class="price">Packages from $750 – $2,500</p>
+    <p>We build smart automations that connect your systems and eliminate manual work — end-to-end.</p>
     <ul>
-      <li>Zapier, Make, Airtable, Google Sheet automation</li>
-      <li>Up to 3 connected systems per project</li>
-      <li>Optional GPT integration add-on</li>
+      <li>Custom-built automations in tools like Zapier, Make, Airtable, Notion, Sheets</li>
+      <li>Integrate 2–5 systems (CRM, forms, dashboards, email)</li>
+      <li>Includes logic setup, error handling, and testing</li>
+      <li>Advanced workflows may include conditional logic or AI triggers</li>
+      <li>Optional GPT integration (auto-emailing, summarizing, decision assistance)</li>
     </ul>
   </div>
 
   <div class="plan">
     <h2>Custom GPTs</h2>
     <p class="price">Custom Builds from $1,200+</p>
+    <p>We design GPT-based tools that work like AI employees — trained on your content, goals, and style.</p>
     <ul>
-      <li>Trained on your content and documents</li>
-      <li>Deployed as a chatbot, internal tool, or app</li>
-      <li>Includes setup, prompt design, testing</li>
+      <li>Ideal for internal assistants, client-facing bots, or content generators</li>
+      <li>Includes prompt engineering, GPT behavior tuning, and formatting logic</li>
+      <li>Training via uploaded files or connected knowledge base</li>
+      <li>Output formats: text, email, webchat, documents</li>
+      <li>Delivery via web, Slack, Chrome extension, or widget</li>
     </ul>
   </div>
 
   <div class="plan">
     <h2>Ongoing AI Support</h2>
     <p class="price">Monthly: $250 – $750</p>
+    <p>Ongoing support to monitor, update, and improve your tools as your needs evolve.</p>
     <ul>
-      <li>Performance reviews & bug fixes</li>
-      <li>Prompt and model updates</li>
-      <li>Priority access to new tools and support</li>
+      <li>Monthly check-ins to review performance and results</li>
+      <li>Prompt optimization and new capability rollouts</li>
+      <li>Bug fixes, system monitoring, and backup updates</li>
+      <li>New feature suggestions based on industry trends</li>
+      <li>Priority Slack or email support</li>
     </ul>
   </div>
 
@@ -117,4 +154,7 @@
 
 </body>
 </html>
+
+
+
 
