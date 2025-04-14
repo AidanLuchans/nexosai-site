@@ -11,6 +11,24 @@
     html {
       scroll-behavior: smooth;
     }
+    /* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1120; /* same as your site background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* soft gray-blue thumb */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6; /* hover color (blue accent) */
+}
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
