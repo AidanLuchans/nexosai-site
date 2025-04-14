@@ -4,35 +4,75 @@
   <meta charset="UTF-8">
   <title>Services | Nexos AI</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #0b1120; color: #f5f5f5; }
-    header { background: #0e1528; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-weight: bold; font-size: 1.5em; color: #67e8f9; }
-    nav a { margin: 0 15px; text-decoration: none; color: #f5f5f5; }
-    .content { padding: 40px 20px; max-width: 800px; margin: auto; }
-    ul { line-height: 2; padding-left: 20px; }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #0b1120; color: #ffffff; line-height: 1.6; }
+    header, footer { background-color: #0b1120; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; color: #67e8f9; font-weight: bold; }
+    nav a, footer a { color: #ffffff; text-decoration: none; margin-left: 25px; font-size: 1rem; }
+    .hero { text-align: center; padding: 80px 20px 40px; }
+    .hero h1 { font-size: 3rem; color: #67e8f9; }
+    .hero p { font-size: 1.2rem; color: #cbd5e1; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .service-card { background-color: #1e293b; padding: 30px; border-radius: 10px; text-align: center; transition: transform 0.2s; }
+    .service-card:hover { transform: scale(1.05); }
+    .service-card h2 { color: #3b82f6; margin-bottom: 10px; }
+    .service-card p { color: #cbd5e1; margin-bottom: 20px; }
+    .service-card a { background-color: #3b82f6; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    footer { text-align: center; background-color: #0f172a; padding: 40px 20px; }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Nexos AI</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <section class="content">
-    <h2>Our Services</h2>
-    <ul>
-      <li><strong>AI Efficiency Audits</strong> — We analyze your operations and identify tasks that can be automated or streamlined. <br><em>Timeframe: 2–5 business days | Price: $300 flat</em></li>
-      <li><strong>Workflow Automation Tools</strong> — We build tailored scripts or tools to automate repetitive processes. <br><em>Timeframe: 1–2 weeks | Starts at $750</em></li>
-      <li><strong>Custom GPT Chatbots</strong> — GPT-powered chatbots trained on your business data to handle customer or employee questions. <br><em>Timeframe: 5–10 days | Starts at $1200</em></li>
-      <li><strong>Internal AI Assistants</strong> — Personalized AI tools that help your team write, plan, analyze, and execute tasks faster. <br><em>Timeframe: 7–14 days | From $1500+</em></li>
-      <li><strong>Ongoing AI Optimization</strong> — Monthly refinement and monitoring of your systems. <br><em>$250/month or bundled with other services</em></li>
-    </ul>
-    <p><strong>Starter Package:</strong> Audit + 1 Automation Tool — <em>$900 total</em></p>
-    <p><strong>Full AI Stack:</strong> Audit + GPT Chatbot + Internal Assistant — <em>From $2700</em></p>
-  </section>
+
+<header>
+  <div class="logo">NEXOS <span style="color: #3b82f9;">AI</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Our AI Services</h1>
+  <p>High-impact, practical AI solutions built around your workflows — not just trends.</p>
+</section>
+
+<section class="services-grid">
+
+  <div class="service-card">
+    <h2>AI Efficiency Audits</h2>
+    <p>We assess your operations to find automation opportunities and wasted time using structured AI frameworks.</p>
+    <a href="ai-audits.html">Learn More</a>
+  </div>
+
+  <div class="service-card">
+    <h2>Workflow Automation</h2>
+    <p>We connect your tools and eliminate repetitive tasks — reducing time spent on manual work by up to 80%.</p>
+    <a href="workflow-automation.html">Learn More</a>
+  </div>
+
+  <div class="service-card">
+    <h2>Custom GPTs</h2>
+    <p>We build intelligent assistants trained on your business data to answer questions, generate content, or support your team.</p>
+    <a href="custom-gpts.html">Learn More</a>
+  </div>
+
+  <div class="service-card">
+    <h2>Ongoing AI Support</h2>
+    <p>We continuously monitor, refine, and improve your AI tools so they evolve alongside your business.</p>
+    <a href="ai-support.html">Learn More</a>
+  </div>
+
+</section>
+
+<footer>
+  <div>
+    <a href="contact.html">Contact</a> |
+    <a href="#">Terms</a> |
+    <a href="#">LinkedIn</a> |
+    <a href="#">Email</a>
+  </div>
+</footer>
+
 </body>
 </html>
