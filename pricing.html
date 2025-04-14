@@ -15,6 +15,24 @@
     .hero { text-align: center; padding: 80px 20px 40px; }
     .hero h1 { font-size: 3rem; color: #67e8f9; }
     .hero p { font-size: 1.2rem; color: #cbd5e1; }
+    /* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1120; /* same as your site background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* soft gray-blue thumb */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6; /* hover color (blue accent) */
+}
+
 
     .pricing-section { max-width: 1000px; margin: auto; padding: 40px 20px; display: grid; gap: 40px; }
     .plan { background-color: #1e293b; padding: 30px; border-radius: 10px; }
